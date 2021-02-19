@@ -13,11 +13,19 @@
   /* HEADER / NAV BAR STYLES START */
   
   header {
+    background-image: url('/Users/adrian/project/run-buddy/hero-bg2.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+
   }
   
   header h1 {
@@ -44,7 +52,7 @@
     list-style: none;
   }
   
-  header nav ul li a {
+  header nav ul li a:hover {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -118,6 +126,8 @@
     color: #024e76;
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(252, 225, 56, 0.8;
+    border-radius: 15px;
   }
   
   .hero-form h3 {
@@ -136,18 +146,20 @@
     color: #024e76;
     width: 100%;
     margin-bottom: 15px; 
+    border-radius: 10px;
   }
   
   .hero-form label {
     margin: 0 5px;
   }
   
-  .hero-form button {
+  .hero-form button:hover {
     color: #fce138;
     background-color: #024e76;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
   } 
   /* HERO STYLES END */
   
@@ -329,9 +341,10 @@
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
   }
   
-  .contact-form button {
+  .contact-form button:hover {
     width: 100%;
     border: none;
     background: #fce138;
@@ -339,6 +352,7 @@
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
   }
   
   .contact-info a {
@@ -349,6 +363,7 @@
   /* REACH OUT STYLES END */
   
   /* UTILITIES */
+
   .text-left {
     text-align: left;
   }
@@ -372,6 +387,7 @@
   header h1 {
     width: 100%;
     text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   header nav ul {
@@ -382,6 +398,7 @@
 
   header nav ul li a {
     font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   footer h2, footer div {
@@ -394,6 +411,7 @@
   
   .hero-cta {
     text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   .section-title {
     width: 80%;
@@ -466,4 +484,18 @@
     .contact-form {
         order: 3;
       }
+  }
+  /* update existing rule with this declaration */
+.form-input {
+    background-color: rgba(255,255,255, 0.75);
+  }
+  
+  /* create a new rule for focus state */
+  .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+
+  .step:nth-child(event) {
+    border-bottom: 1px solid #39a6b2;
   }
